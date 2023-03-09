@@ -1,0 +1,31 @@
+<body>
+  
+    <div id="hphk">
+      <h2>어떻게 선택 될까?</h2>
+      <p>첫번째 단락</p>
+      <p>두번째 단락</p>
+      <p>세번째 단락</p>
+      <p>네번째 단락</p>
+    </div>
+    <style>
+      #hphk > p:nth-child(2) {
+        color: blue;
+      }
+      #hphk > p:nth-of-type(2) {
+        color: red;
+      }
+    </style>
+    
+  </body>
+  
+  # 부모
+  <!-- 
+  :nth-child(N)= 부모안에 모든 요소 중 N번째 요소
+  A:nth-of-type(N)= 부모안에 A라는 요소 중 N번째 요소
+  를 의미한다
+  
+  p:nth-child(2)의 경우 h2 태그를 포함하여 부모 안에 있는 모든 요소 중에 2번째 요소인
+  '첫번째 단락'을 파란색으로 변경함
+  
+  p:nth-of-type(2)의 경우 부모안에 p라는 요소 중에 2번째 요소인 '두번째 단락'을 빨간색으로 변경함 -->
+  
