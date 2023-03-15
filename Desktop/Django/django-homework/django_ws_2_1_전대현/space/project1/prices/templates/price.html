@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    {% load mathfilters %}
+    {% if num == 1 %}
+    <p>{{product}} {{cnts}}개의 가격은 {{price|mul:cnts}}원 입니다.</p>
+    {% elif num != 1 %}
+    <p>{{name}}은/는 없어용</p>
+    {% endif %}
+</body>
+</html>
