@@ -1,0 +1,446 @@
+*{
+   
+    font-family: 'Nanum Brush Script', cursive;
+
+    list-style:none;
+}
+header > nav > .icon-container {
+    font-size : 2rem;
+}
+
+ul {
+    padding-left : 0px;
+
+}
+
+a {
+    text-decoration: none;
+}
+#not_provided {
+    display : none;
+    /* 존재하지만 화면에 보이지 않음 */
+    /* visibility: hidden; */
+    /* 공간을 띄어놓고 배치, 화면에는 보이지 않는다 */
+}
+
+@media (max-width: 575px) {
+    header,
+    main,
+    article,
+    footer {
+        display: none !important;
+    }
+    #not_provided {
+        display : block;
+    }
+}
+
+/* header */
+/* 경로를 작성하면, 우선순위가 더 높고 혹시 변수명이 겹쳤을 경우 구분하는 효과도 얻을 수 있음 */
+header > nav > .icon-container {
+    margin-left: 12rem;
+
+
+}
+
+header > nav > .navbar-nav {
+    margin-right: 12rem;
+}
+
+@media (max-width:992px) {
+    header > nav > .icon-container {
+        margin-left: 6rem;
+    
+    
+    }
+    
+    header > nav > .icon-container {
+        margin-right: 6rem;
+    }
+}
+/* 반응형으로 구현할 때에는 px보다는 rem을 사용하는 것이 효율적임 */
+
+#frontpage {
+    padding-top: 5rem;
+
+}
+#frontpage {
+    padding-top: 5rem;
+}
+
+#my-intro,#frontpage {
+    font-weight: bold;
+}
+
+
+#my-intro > li:nth-child(4),li:nth-child(5),#my-intro > div.column-name,#my-intro > div.column-data {
+    color : darkgoldenrod
+}
+#my-intro > div.my-intro-layout-parent > section.info-text-container > ul {
+    color : darkgoldenrod
+}
+
+#my-intro > div.my-intro-layout-parent > section.info-text-container > h2 {
+    color : brown
+}
+
+#frontpage > .title-container > h2 {
+    color : black
+}
+
+#frontpage > .title-container > a > .btn{
+    background-color: peachpuff;
+}
+
+#frontpage > .title-container > h3 {
+    color : brown
+}
+
+h2,
+h3,
+header {
+    font-weight : bold ;
+}
+
+#frontpage {
+    background-color: blanchedalmond;
+    display: flex;
+    height: 100vh;
+}
+
+.frontpage-img-container {
+    flex :3;
+    background-image: linear-gradient(to left, transparent, blanchedalmond),url('./skills-icon/labtop.jpg');
+    background-size: cover;
+
+}
+
+#frontpage > nav {
+    width: 100px;
+}
+
+#frontpage > nav > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+}
+
+#frontpage > nav li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.icon {
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 1rem;
+}
+
+#frontpage > .title-container{
+    padding-left: 10rem;
+    padding-top: 10rem;
+}
+
+#frontpage > .title-container > h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#frontpage > .title-container > ul{
+    margin-bottom: 30px;
+}
+
+@media (max-width:992px) {
+    #frontpage > nav li{
+        display : none;
+
+    }
+    #frontpage > .title.container{
+        padding-left: 1rem;
+        padding-right: 8rem;
+    }
+    #frontpage h2{
+        font-size : 1.8rem;
+    }
+    #frontpage h2{
+        font-size : 1.5rem;
+    }
+    #frontpage ul{
+        font-size : 0.8;
+    }
+}
+    
+#my-intro{
+    display: flex;
+    align-items: center;
+  
+}
+#my-intro >.my-intro-layout-parent{
+    display: flex;
+    
+    margin-bottom: 120px;
+}
+
+#my-intro .profile-img-container{
+    flex:1;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#my-intro .info-text-container {
+    flex : 2;
+    padding-left: 50px;
+}
+
+#my-intro .profile-img {
+    background-image: url('./skills-icon/profile.jpg');
+    height: 26rem;
+    width: 23rem;
+    background-size: cover;
+}
+
+#my-intro .my-interests-container > h2 {
+    margin-bottom: 20px;
+}
+#my-intro .my-interests-container > ul {
+    display : flex;
+}
+#my-intro .my-interests-container li {
+    margin-right: 4rem;
+    width: 2rem;
+    justify-content: space-between;
+    display : flex;
+}
+
+#my-intro .contact-info-ul .row{
+    display : flex;
+    flex-direction: row;
+    flex : 1;
+    align-items: center;
+}
+
+#my-intro .contact-info-ul .icon-container {
+    flex : 2;
+    
+}
+#my-intro .contact-info-ul .column-name {
+    flex : 4;
+
+}
+#my-intro .contact-info-ul .column-data {
+    flex : 5;
+
+}
+
+
+
+/* footer */
+footer{
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size : 2rem;
+}
+
+@media (max-width:769px){
+   footer{
+    font-size: 1rem;
+   } 
+}
+
+/* skills */
+
+#skills > ul {
+    display:flex;
+    justify-content: center;
+    flex-wrap : wrap;
+}
+
+#skills > h2 {
+    color : brown;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+
+#skills .card{
+    width: 22rem;
+    margin-bottom: 100px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#skills .card-header{
+    font-size:  1.5rem;
+}
+
+#skills ul img{
+    height: 4rem;
+    margin-top: 10px;
+
+}
+
+/* project */
+
+#project h2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#project > .edu-project-container{
+    display : flex;
+}
+
+#project .edu-container{
+    flex:2;
+}
+
+#project .project-container{
+    flex : 1;
+}
+
+@media(max-width :992px) {
+    #project > .edu-project-container{
+        flex-direction: column;
+    }
+}
+
+#project .edu-project-container h3{
+    display : flex;
+    align-items: center;
+}
+#project .edu-project-container h3 .material-symbols-outlined{
+
+    font-size:3rem;
+    margin-right: 20px;
+}
+
+#project .date{
+    margin-top: 10px;
+    display : flex;
+    align-items: center;
+}
+
+#project .date-data{
+    margin-left: 20px;
+}
+
+#project li {
+    border-left:  5px solid rgb(4,1,112);
+    padding-left: 30px;
+    margin-left: 20px;
+}
+
+/* contact */
+
+#contact {
+    margin-bottom:80px;
+}
+
+#contact h2,h3 {
+    text-align: center;
+}
+#contact h2 {
+    font-size:2rem;
+}
+#contact h3 {
+    font-size:3rem;
+    margin-bottom: 80px;
+}
+
+#contact .contact-container{
+    display: flex;
+}
+
+#contact .input-container{
+    flex:2;
+}
+
+#contact .name-email-container,
+#contact .title-container,
+#contact .content-container{
+    margin-bottom:40px;
+}
+
+#contact .name-email-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-container,email-container{
+    flex:1
+}
+
+.name-container {
+    margin-right:20px;
+}
+
+.email-container {
+    margin-left:20px;
+}
+
+#contact .contact-info-container{
+    flex:1
+}
+
+#contack-input-content{
+    height: 300px;
+}
+
+#contact > div > div.input-container > button{
+    margin-right:20px;
+    border-radius: 20px;
+    height: 50px;
+    width : 100%;
+}
+
+.contact-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 1000px){
+    .contact-info-container{
+        display: none;
+    }
+}
+
+.phone-container{
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+#contact .icon-container{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#contact .icon-container span{
+    font-size:2rem;
+    color:white;
+}
+
+.kategorie{
+    margin-left:30px;
+}
+
+.kategori-name{
+    font-size:1.5rem;
+}
+
